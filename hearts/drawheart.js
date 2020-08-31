@@ -1,0 +1,12 @@
+document.body.innerText = "";
+var c = document.createElement("canvas");
+c.width = window.screen.availWidth;
+c.height = window.screen.availHeight;
+document.body.append(c);
+var ctx = c.getContext("2d");
+ctx.drawHeart(30, 30, 7);
+ctx.fill();
+ctx.drawHeart(40, 15, 4);
+ctx.fill();
+ctx.drawHeart(45, 45, 10);
+ctx.fill();
